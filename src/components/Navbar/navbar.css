@@ -1,0 +1,309 @@
+.navbar {
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(20px);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.scrolled {
+    background: rgba(15, 15, 15, 0.98);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    height: 70px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Styles */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #667eea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Desktop Menu */
+.desktopMenu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.desktopMenuListItem {
+    color: #e2e8f0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.desktopMenuListItem span {
+    position: relative;
+    z-index: 1;
+}
+
+.desktopMenuListItem::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #667eea 100%);
+    transition: width 0.3s ease;
+}
+
+.desktopMenuListItem:hover {
+    color: white;
+}
+
+.desktopMenuListItem:hover::before {
+    width: 100%;
+}
+
+.desktopMenuListItem.active {
+    color: white;
+}
+
+.desktopMenuListItem.active::before {
+    width: 100%;
+}
+
+/* Desktop Contact Button */
+.desktopMenuBtn {
+    background: linear-gradient(135deg, #1b7ed4 0%, #667eea 100%);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.desktopMenuBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    gap: 1rem;
+}
+
+.desktopMenuImg {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Mobile Menu Button */
+.mobMenuBtn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.mobMenuBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mobMenuIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Mobile Menu */
+.navMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: rgba(15, 15, 15, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: 1001;
+    transition: right 0.3s ease;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navMenuOpen {
+    right: 0;
+}
+
+.mobile-menu-content {
+    padding: 6rem 2rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.listItem {
+    color: #e2e8f0;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+.listItem:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.listItem.active {
+    background: linear-gradient(135deg, #1b7ed4, rgba(118, 75, 162, 0.2) 100%);
+    color: white;
+    border-color: rgba(102, 126, 234, 0.5);
+}
+
+.mobileContactBtn {
+    background: linear-gradient(135deg, #1b7ed4 0%, #667eea 100%);
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.mobileContactBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(6, 95, 204, 0.4);
+}
+
+.mobileContactBtn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Menu Overlay */
+.menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+    .desktopMenu {
+        gap: 1.5rem;
+    }
+    
+    .desktopMenuBtn {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+    
+    .mobMenuBtn {
+        display: flex;
+    }
+    
+    .desktopMenu,
+    .desktopMenuBtn {
+        display: none;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .navMenu {
+        width: 280px;
+    }
+    
+    .mobile-menu-content {
+        padding: 5rem 1.5rem 2rem;
+    }
+    
+    .logo {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation for menu items */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.navMenuOpen .listItem {
+    animation: slideIn 0.3s ease forwards;
+}
+
+.navMenuOpen .listItem:nth-child(1) { animation-delay: 0.1s; }
+.navMenuOpen .listItem:nth-child(2) { animation-delay: 0.2s; }
+.navMenuOpen .listItem:nth-child(3) { animation-delay: 0.3s; }
+.navMenuOpen .listItem:nth-child(4) { animation-delay: 0.4s; }
+.navMenuOpen .mobileContactBtn { animation-delay: 0.5s; }
