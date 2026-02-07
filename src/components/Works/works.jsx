@@ -8,7 +8,7 @@ import Portfolio4 from '../../assets/portfolio-4.png';
 import Portfolio5 from '../../assets/portfolio-5.png';
 import Portfolio6 from '../../assets/portfolio-6.png';
 import todo from '../../assets/todoapp.png';
-import mediqueue from '../..assets/mediqueue.png';
+import mediqueue from "../../assets/mediqueue.png";
 import quiz from '../../assets/quizapp.png';
 import wa from '../../assets/weatherapp.png';
 import travo from '../../assets/travoapp.png';
