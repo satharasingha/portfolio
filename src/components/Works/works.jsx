@@ -24,10 +24,10 @@ const Works = () => {
     {
       id: 1,
       image: mediqueue,
-      title: "Hospital Appointment Booking System",
+      title: "Hospital Appointment Booking",
       category: "web",
       description:
-        "A React.js web application designed to manage hospital appointment scheduling, featuring patient booking, appointment management, and an intuitive interface to optimize daily hospital operations.",
+        "A React-based hospital appointment booking system that simplifies patient scheduling, reduces queue times, and improves daily hospital operations.",
     },
 
     {
