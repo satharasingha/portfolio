@@ -8,6 +8,7 @@ import Portfolio4 from '../../assets/portfolio-4.png';
 import Portfolio5 from '../../assets/portfolio-5.png';
 import Portfolio6 from '../../assets/portfolio-6.png';
 import todo from '../../assets/todoapp.png';
+import mediqueue from '../..assets/mediqueue.png';
 import quiz from '../../assets/quizapp.png';
 import wa from '../../assets/weatherapp.png';
 import travo from '../../assets/travoapp.png';
@@ -17,16 +18,17 @@ import air from '../../assets/airdashboard.png'
 const Works = () => {
     const [activeFilter, setActiveFilter] = useState('all');
 
-    const githubLink = "https://github.com/satharasingha"; // <-- Your GitHub URL
+    const githubLink = "https://github.com/satharasingha"; 
 
     const projects = [
         {
-            id: 1,
-            image: todo,
-            title: "Todo App",
-            category: "web",
-            description: "A simple React JS application to manage daily tasks."
+           id: 1,
+           image: mediqueue,
+           title: "Hospital Appointment Booking System",
+           category: "web",
+           description: "A React.js web application designed to manage hospital appointment scheduling, featuring patient booking, appointment management, and an intuitive interface to optimize daily hospital operations."
         },
+
         {
             id: 2,
             image: quiz,
