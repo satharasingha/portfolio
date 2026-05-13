@@ -14,6 +14,7 @@ import wa from "../../assets/weatherapp.png";
 import travo from "../../assets/travoapp.png";
 import fuel from "../../assets/fualapp.png";
 import air from "../../assets/airdashboard.png";
+import devmock from '../../assets/Devmock.png'
 
 const Works = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -33,7 +34,7 @@ const Works = () => {
     {
       id: 2,
       image: quiz,
-      title: "Quiz App",
+      title: "AI Career Support Platform",
       category: "web",
       description: "An interactive app to create and take quizzes online.",
     },
