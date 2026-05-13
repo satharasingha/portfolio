@@ -14,7 +14,8 @@ import wa from "../../assets/weatherapp.png";
 import travo from "../../assets/travoapp.png";
 import fuel from "../../assets/fualapp.png";
 import air from "../../assets/airdashboard.png";
-import devmock from '../../assets/Devmock.png'
+import devmock from '../../assets/Devmock.png';
+import room from '../../assets/Landing page.png';
 
 const Works = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -32,19 +33,19 @@ const Works = () => {
     },
 
     {
-      id: 2,
-      image: quiz,
-      title: "AI Career Support Platform",
-      category: "web",
-      description: "An interactive app to create and take quizzes online.",
-    },
-    {
-      id: 3,
-      image: wa,
-      title: "Weather App",
-      category: "web",
-      description: "Get current weather and forecasts for any location.",
-    },
+  id: 2,
+  image: devmock,
+  title: "AI Career Support Platform",
+  category: "web",
+  description: "AI-powered platform providing personalized career guidance.",
+},
+{
+  id: 3,
+  image: room,
+  title: "3D Room Layout Designer",
+  category: "web",
+  description: "Interactive 3D tool for designing and visualizing room layouts with drag-and-drop furniture placement.",
+},
     {
       id: 4,
       image: travo,
