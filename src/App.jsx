@@ -20,10 +20,8 @@ function App() {
 
       <Works />
 
-      <Contact />
-
       <Blog />
-
+      <Contact />
       <Footer />
     </>
   )
