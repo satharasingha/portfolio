@@ -43,7 +43,7 @@ const Blog = () => {
 
             readTime: '8 min read',
 
-            image: wso2Image,
+            // image: wso2Image,
 
             featured: true,
 
@@ -116,7 +116,7 @@ It's just the thing that has to work.
 
             readTime: '5 min read',
 
-            image: webImage
+            // image: webImage
         },
 
         {
@@ -134,7 +134,7 @@ It's just the thing that has to work.
 
             readTime: '4 min read',
 
-            image: uiuxImage
+            // image: uiuxImage
         },
 
         {
@@ -152,7 +152,7 @@ It's just the thing that has to work.
 
             readTime: '6 min read',
 
-            image: iotImage
+            // image: iotImage
         },
 
         {
@@ -170,7 +170,7 @@ It's just the thing that has to work.
 
             readTime: '3 min read',
 
-            image: portfolioImage
+            // image: portfolioImage
         },
 
         {
@@ -188,7 +188,7 @@ It's just the thing that has to work.
 
             readTime: '5 min read',
 
-            image: webImage
+            // image: webImage
         },
 
         {
@@ -206,7 +206,7 @@ It's just the thing that has to work.
 
             readTime: '7 min read',
 
-            image: roboticsImage
+            // image: roboticsImage
         }
     ];
 
