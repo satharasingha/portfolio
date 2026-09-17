@@ -78,6 +78,18 @@ const Navbar = () => {
                     >
                         <span>Contact</span>
                     </Link>
+
+                    <Link 
+                        activeClass='active' 
+                        to='contact' 
+                        spy={true} 
+                        smooth={true} 
+                        offset={-50} 
+                        duration={500} 
+                        className="desktopMenuListItem"
+                    >
+                        <span>Blog</span>
+                    </Link>
                 </div>
 
                 {/* Contact Button */}
