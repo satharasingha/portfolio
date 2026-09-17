@@ -5,6 +5,7 @@ import Skills from './components/Skills/skills'
 import Contact from './components/Contact/contacts'
 import Works from './components/Works/works'
 import Footer from './components/Footer/footer'
+import Blog from './components/Blog/blog'
 
 function App() {
  
@@ -20,6 +21,8 @@ function App() {
       <Works />
 
       <Contact />
+
+      <Blog />
 
       <Footer />
     </>
